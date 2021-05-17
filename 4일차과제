@@ -1,0 +1,34 @@
+문제 1 .. 세 개의 정수를 입력 받아 합과 평균을 구하시오. 
+
+    int a = Integer.parseInt(args[0]); // 첫 번째 정수 입력
+		int b = Integer.parseInt(args[1]); // 두 번째 정수 입력
+		int c = Integer.parseInt(args[2]); // 세 번째 정수 입력
+		
+		
+		System.out.println("sum= "+ (a+b+c)); // sum 값이라는 문자열 뒤에 a,b,c의 합을 출력
+		System.out.println("avg ="+ (a+b+c)/3); // avg 값이라는 문자열 뒤에 a,b,c의 합을 구한 뒤 3으로 나눠 평균 값을 출력
+    
+    
+문제 2 .. 정수 2개를 입력 받아서 첫 번째 수에는 100을 증가시켜 저장하고 두 번째 수는 10으로 나눈 나머지를 저장한 후 두 수를 차례로 출력하는 프로그램을 작성
+
+  	int a = Integer.parseInt(args[0]); // 첫 번째 정수를 입력 20;
+		int b = Integer.parseInt(args[1]); // 두 번째 정수를 입력 35;
+	
+		System.out.println((a+100));  // 첫 번째 정수 20에 100을 더한 뒤 출력
+		System.out.println((b%10));  // 두 번째 정수 35에 10으로 나눈 뒤 나머지 5를 출력
+    
+문제 3 .. 두 정수를 입력 받아 몫과 나머지를 구하시오
+
+	  int a = Integer.parseInt(args[0]); // 입력 값 35
+	  int b = Integer.parseInt(args[1]); // 나눌 값 10 입력
+	
+		System.out.println(a/b+"..."+a%b); // 35 /10 ... 35 % 10 =   (몫)3 ... (나머지)5 출력
+    
+   88p 문제풀이
+   Q1:  =,==,?,:
+   Q2:  10
+   Q3:  10,10,11,10
+   Q4:  false, true,false
+   Q5:  20,10,8,모름
+   Q6:  18,8,2
+   Q7:  30
