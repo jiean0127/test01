@@ -1,0 +1,152 @@
+// 과제 123p 연습문제 Q1 
+package KosmoJava;
+import java.util.Scanner;
+
+public class Test1ex1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("두 수를 입력하시오 : ");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		
+		System.out.println("사칙 연산 기호를 입력하시오. ");
+	  char input = sc. next(). charAt(0); // next관련 함수에서는 char형으로 입력을 받아주는 함수가 없다 
+										   // next를 통해 받은 String에서 charAt을 통해 char값을 입력받는다
+		if (input == '+') {
+			System.out.println(num1+ " + "+ num2 + " = " + (num1+num2));
+		}
+		
+		else if (input == '-') {
+			System.out.println(num1+ " - "+ num2 + " = " + (num1-num2));
+		}
+		
+		else if (input == '*') {
+			System.out.println(num1+ " * "+ num2 + " = " + (num1*num2));
+		}
+		
+		else if (input == '/') {
+			System.out.println(num1+ " / "+ num2 + " = " + (num1/num2));
+		}
+	}
+}
+
+// 과제 123p 연습문제 Q2
+package KosmoJava;
+import java.util.Scanner;
+public class Test1ex2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("단을 입력하세요");
+		int dan = sc. nextInt();
+		
+		for(int i =1;i<=9;i++) { // 단을 입력 받은 뒤  i값으로 9번까지 구구단 출력 ex)8x1~ 8x9
+			if(dan % 2 == 0) { // 값을 2로 나눠서 나머지가 0일 때 짝수로 판단하여 구구단 출력
+				System.out.println(dan + " + " + i + " = " +(dan * i));
+				continue; // 컨티뉴 문을 사용하여 for문으로 다시 돌아감
+			}
+				
+		}
+		
+	}
+		
+	}
+  
+  // 과제 123p 연습문제 Q3
+  package Testday5;
+
+import java.util.Scanner;
+
+public class Test1ex3 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("단을 입력하세요. : ");
+		int dan = sc. nextInt();
+		
+		for(int i = 0; i <=9;i++) ex) 단 5입력
+		{
+			if(dan != i) // 5가 i랑 같을 때 까지 i의 숫자를 1씩 더하면서 아래 문구 출력
+			{
+				System.out.println(dan + " * " + i + " = " +(dan * i));
+				
+			}
+			else if(dan == i) { // i값이 단 값과 같을 경우 똑같은 숫자인 경우의 문구 출력 후 브레이크문 사용 종료
+				System.out.println(dan + " * " + i + " = " +(dan * i));
+				break;
+			}
+		}
+	}
+}
+
+//과제 123p 연습문제 Q4
+package Testday5;
+public class Test1ex4 {
+	public static void main(String[] args) {
+		
+		for(int i=0;i<4;i++){
+			
+			for(int j=0;j<3-i;j++){
+				
+				System.out.print(" "); 
+			}
+			
+			for(int j=0;j<2*i+1;j++){
+				
+				System.out.print("*"); 
+			}
+			
+			System.out.println("");
+		}
+		
+	}
+	}
+  
+  과제 123p 연습문제 Q5
+  
+  package Testday5;
+
+import java.util.Scanner;
+
+public class Test1ex4 {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("홀수를 입력해주세요");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		for (int i=0;i<num;i++){
+		  for (int j=0; j<num;j++)
+		  {
+		     if (i<=num/2)// 위쪽 영역
+		     {
+		        if (i+j<=num/2-1)// 왼쪽 위 공백찍기
+		           System.out.print(" ");
+		        else if (j-i>=num/2+1) // 오른쪽 위 공백찍기
+		        	System.out.print(" ");
+		        else
+		           System.out.print("*");// *찍기
+		     }
+		     else if (i>num/2) //아래쪽 영역
+		     {
+		        if (i-j>=num/2+1) //왼쪽 밑 공백
+		        	System.out.print(" ");
+		        else if (i+j>=num/2*3+1)//오른쪽 밑 공백
+		        	System.out.print(" ");
+		        else
+		        	System.out.print("*"); // *찍기
+		     }
+		  }
+		  System.out.println();//줄바꿈
+		}
+		
+		
+	}
+	}
