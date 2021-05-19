@@ -1,0 +1,36 @@
+
+//실패입니다.
+
+package Testday5;
+
+import java.util.Scanner;
+
+public class Test3ex101 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+	
+		int i = 100;
+		while(true){
+			
+			System.out.println("키(cm) 입력 :");
+			int cm = sc.nextInt();
+			
+			System.out.println("몸무게(kg) 입력 :");
+			int kg = sc.nextInt();
+			
+			if (((char)kg == 'q'|| kg == -1) ||((char)cm == 'q' || cm == -1 )) 
+				break;
+			
+			
+			else if (kg + i -cm > 0)
+			{
+				System.out.println("출력수치 :" + (kg + i -cm) + "(비만)");
+				
+			}
+			
+		}
+	}
+}
+		
