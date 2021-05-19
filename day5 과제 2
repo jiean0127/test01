@@ -1,0 +1,44 @@
+// 연산자 1개 피연산자 2개를 scanner 입력받아 사칙연산 만들기
+
+package Testday5;
+
+import java.util.Scanner;
+
+public class Test2ex101 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("1.피연산자 : ");
+		int num1 = sc.nextInt();
+		
+		System.out.println("2. 연산자");
+		char operation = sc. next(). charAt(0); 
+		
+		System.out.println("3. 피연산자 : ");
+		int num2 = sc.nextInt();
+		
+		
+		if(operation == '+')
+		{
+			System.out.println("값: "+num1+num2);
+		}
+		
+		else if(operation == '-')
+		{
+			System.out.println("값: "+(num1-num2));
+		}
+		
+		else if(operation == '*')
+		{
+			System.out.println("값: "+num1*num2);
+		}
+		
+		else if(operation == '/')
+		{
+			System.out.println("값: "+num1/num2);
+		}	
+		
+	}
+
+}
